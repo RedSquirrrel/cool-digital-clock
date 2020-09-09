@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #060a1f;
+  line-height: 1.2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#clock {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#clock h1 {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  font-size: 1rem;
+  margin: 0 10px 25px 10px;
+}
+
+#clock #time {
+  display: flex;
+  border-bottom: 1px solid rgb(199, 167, 167);
+  padding-bottom: 5px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#clock #time div {
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 11px linear-gradient(transparent, rgb(0, 0, 0));
+  cursor: pointer;
+}
+
+#clock #time div span {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 90px;
+  background: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  font-size: 3rem;
+}
+
+#clock #time div span:nth-child(2) {
+  height: 3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  background: #127fd6;
+  box-shadow: none;
+}
+
+#clock #time div:last-child span {
+  background: #ff006a;
+}
+#clock #time div:last-child span:nth-child(2) {
+  background: #f82e82;
+}
+
+#clock #time div:first-child span {
+  background: #0059ff;
+}
+#clock #time div:first-child span:nth-child(2) {
+  background: #2e31f8;
+}
